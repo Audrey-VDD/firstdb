@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update product</title>
+</head>
+<body>
+    <h1>update product</h1>
+    <form action="/product/update/<%= updateProduct.id_produit %>" method="post" >
+        <input type="hidden" name="id_produit" value="<%=updateProduct.id_produit%>" >
+        <label>Prix :</label>
+        <input type="number" name="prix" value="<%= updateProduct.prix %>" >
+        <label >Image :</label>
+        <input type="text" name="image" value="<%= updateProduct.image %>" >
+        <button type="submit" >modify</button>
+
+    </form>
+</body>
+</html>
